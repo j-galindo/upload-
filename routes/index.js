@@ -1,5 +1,6 @@
 const express = require('express');
-const Movie = require('../models/movie.js')
+const Movie = require('../models/movie.js');
+const uploadCloud = require('../config/cloudinary.js');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
